@@ -19,19 +19,24 @@ article
       text-transform: uppercase
       letter-spacing: .01em
       font-weight: 700
+      a.home
+        underline(4px, $color-accent-1)
 
     .postdate
       display: inline
 
   .content
-    h2:before
-      position: absolute
-      top: -4px
-      left: -1rem
-      color: $color-accent-1
-      content: "#"
-      font-weight: bold
-      font-size: 1.2rem
+    padding-bottom: 2rem
+    margin-bottom: 2rem
+    border-bottom: 1px solid $color-text
+    //h2:before
+    //  position: absolute
+    //  top: -4px
+    //  left: -1rem
+    //  color: $color-accent-1
+    //  content: "#"
+    //  font-weight: bold
+    //  font-size: 1.2rem
 
     img
     video
@@ -118,16 +123,16 @@ article
   font-size: 1.5em
   line-height: 1.25
 
+.article-category
+  .category-link
+    underline(10px, $color-link)
+
 .article-tag
   .tag-link
+    underline(10px, $color-link)
     &:before
       content: "#"
 
-    underline(10px, $color-link)
-
 @media (min-width: 480px)
-  .article-tag
+  .article-category, .article-tag
     display: inline
-
-    &:before
-      content: "|"
