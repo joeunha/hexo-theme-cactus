@@ -40,7 +40,7 @@ tags_overview: false
 #   - show_all_posts: whether to show all available posts.
 #   - post_count: whether to show only the x most recent posts.
 posts_overview:
-  show_all_posts: false
+  show_all_posts: true
   post_count: 10
 
 
@@ -104,11 +104,11 @@ rss: false
 
 # Turn your web pages into graph objects (see http://ogp.me).
 open_graph:
-  fb_app_id:
+  fb_app_id: 1553991251352257
   fb_admins:
   twitter_id:
   google_plus:
-
+  image: '/images/cactus.jpg'
 
 ##############################################################################
 # Plugins
@@ -121,7 +121,7 @@ disqus:
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:
-  enabled: false
+  enabled: true
   id: UA-92829973-1
 
 # Fill in you Gravatar user id / email if you want to use your gravatar as the
